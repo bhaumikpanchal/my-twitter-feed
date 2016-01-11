@@ -1,0 +1,16 @@
+.tweet-container { width:100%; padding:10px; border:1px solid #aaa; margin:0 10px 10px 0; float:left; font-family:sans-serif; color:#333; background-color:#eee; }
+.tweet-container h3 { margin:0; font-weight:normal; }
+.tweet-container h3 span { padding-left:10px; font-size:18px; line-height:24px; font-weight:normal; }
+.tweet-container img { border-width:1px; border-style:solid; border-color:#fff; border-right-color:#aaa; border-bottom-color:#aaa; margin-right:10px; float:left; }
+.tweet-container div { margin-bottom:24px; font-size:14px; }
+.tweet-container a { color:#333;}
+.tweet-container dl { margin:0; float:left; font-size:14px; }
+.tweet-container dt, .tweet-container dd { margin:0; float:left; }
+.tweet-container dt { width:75px; clear:left; }
+
+#twitterFeedSource { padding-bottom: 15px; }
+
+#searchBar { padding-left: 0px; padding-bottom: 15px; }
+
+
+header { margin-bottom:10px; }

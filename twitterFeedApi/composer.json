@@ -1,0 +1,29 @@
+{
+    "name": "My Twitter Feed",
+    "description": "Twitter Feed of a username I want to track",
+    "authors": [
+        {
+            "name": "Bhaumik Panchal",
+            "email": "bhaumik89@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "twitterFeedApi\\" : "/library/"
+        },
+        "classmap" : [
+          "library/"
+        ],
+        "files" : [
+          "config/keys.php"
+        ]
+
+    }
+}
