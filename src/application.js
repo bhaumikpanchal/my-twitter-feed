@@ -63,4 +63,7 @@
     //create instance of master view
     var feed = new TweetFeedView();
 
+    //set interval of 60 seconds to get updated set of tweets
+    setInterval(buildData, 60000);
+
 } (jQuery));
