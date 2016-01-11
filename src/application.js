@@ -9,7 +9,7 @@
         $.ajax({
             async: false,
             type: "GET",
-            url: "http://localhost:8080/my-twitter-feed/twitterfeedapi/twitter-feed/salesforce/10",
+            url: window.location.href + "twitterfeedapi/twitter-feed/salesforce/10",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data) {
@@ -17,7 +17,7 @@
             },
 
             error: function () {
-                alert("Whoops, there was error returned while retreiving data");
+                alert("Whoops, there was error returned while retrieving data");
             }
         });
 

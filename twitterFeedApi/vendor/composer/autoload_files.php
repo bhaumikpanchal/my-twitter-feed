@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $baseDir . '/config/keys.php',
+    'fc9abed0a15751ab79de790631b235fa' => $baseDir . '/config/keys.php',
 );

@@ -7,7 +7,7 @@ $app = new \Slim\Slim([
 ]);
 $apiKeys = fetchAPIKeys();
 
-$twitterAPI = new mytwitterfeed\library\TwitterAPIExchange($apiKeys);
+$twitterAPI = new \twitterFeedApi\library\TwitterAPIExchange($apiKeys);
 
 $app->get('/twitter-feed/:screen_name/:count', function($screen_name, $count) use ($twitterAPI) {
 	$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
