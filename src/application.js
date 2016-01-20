@@ -3,13 +3,13 @@
     var tweets = buildData();
 
     $("#searchText").keyup(function() {
-        var filter = $(this).val(), count = 0;
+        var filter = $(this).val();
 
         $("tweet").each(function() {
             if ($(this).children("div").text().search(new RegExp(filter, "i")) < 0) {
                 $(this).fadeOut();
  
-            // Show the list item if the phrase matches and increase the count by 1
+            // Show the list item if the phrase matches
             } else {
                 $(this).show();
             }
