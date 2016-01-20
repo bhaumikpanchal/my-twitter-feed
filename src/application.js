@@ -2,6 +2,20 @@
 
     var tweets = buildData();
 
+    $("#searchText").keyup(function() {
+        var filter = $(this).val(), count = 0;
+
+        $("tweet").each(function() {
+            if ($(this).children("div").text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+            }
+        });
+    });
+
     function buildData() {
         var rawData = '';
         var tweets = [];
